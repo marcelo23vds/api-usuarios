@@ -1,5 +1,5 @@
 /********************************************************************
- * Objetivo: lidar com as requisições e as rotas da API
+ * Objetivo: O controlador lida com a lógica da requisição e resposta, utilizando o modelo para acessar os dados.
  * Autor: Marcelo Vieira
  * Data: 27/08/2025
  * Versão: 1.0
