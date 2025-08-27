@@ -13,9 +13,9 @@ const userController = require('../controller/userController')
 router.get('/', userController.getAllUsers)
 
 // rota para obter um usuário por ID
-//router.get('/:id', userController.getUserById)
+router.get('/:id', userController.getUserById)
 
 // rota para criar um novo usuário
-//router.post('/', userController.createUser)
+router.post('/', userController.createUser)
 
 module.exports = router

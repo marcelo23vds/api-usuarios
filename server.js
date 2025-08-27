@@ -14,6 +14,14 @@ const userRoutes = require('./src/routes/userRoutes')
 //criar uma aplicação express
 const app = express()
 
+// middleware necessário para interpretar JSON no body das requisições
+app.use(express.json())
+// No Express, um middleware é uma função que intercepta a requisição antes de chegar nas rotas. Ele pode:
+// Ler ou modificar dados da requisição (req)
+// Fazer validações
+// Chamar a próxima função de rota
+
+
 //definir a porta em que o servidor irá escutar
 const porta = 8000
 

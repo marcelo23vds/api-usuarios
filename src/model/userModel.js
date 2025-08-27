@@ -19,7 +19,7 @@ const findAll = () => {
 
 //função para buscar um usuário por ID
 const findById = (id) => {
-    return users.find(user => user.id === id)
+    return users.find(user => user.id === parseInt(id))
 }
 
 //função que adiciona um novo usuario
