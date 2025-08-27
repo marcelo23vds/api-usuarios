@@ -19,7 +19,7 @@ API RESTful em Node.js e Express para gerenciar usuários, permitindo listar, bu
 
 3 - Criar requisições no Postman do VSCode:
 
-    GET /api/users: 	
+    GET /api/users	
     - Envie uma requisição GET para => http://localhost:8000/api/users 
     - A resposta será um JSON com a lista de usuários
 
