@@ -13,6 +13,7 @@ API RESTful em Node.js e Express para gerenciar usuários, permitindo listar, bu
 1 - Instalar a extensão Postman no VSCode
 
 2 - Iniciar o servidor Node:
+
     - No terminal, execute => node server.js 
     - Você verá a mensagem => "Servidor rodando em http://localhost:8000".
 
