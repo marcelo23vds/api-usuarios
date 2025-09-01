@@ -1,8 +1,8 @@
 /********************************************************************
  * Objetivo: As rotas conectam as URLs aos controladores.
  * Autor: Marcelo Vieira
- * Data: 27/08/2025
- * Versão: 1.0
+ * Data: 01/09/2025
+ * Versão: 1.1
 ********************************************************************/
 
 const express = require('express')

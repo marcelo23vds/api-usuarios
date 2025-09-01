@@ -1,8 +1,8 @@
 /********************************************************************
  * Objetivo: Servidor Web utilizando o Node e Express
  * Autor: Marcelo Vieira
- * Data: 27/08/2025
- * Versão: 1.0
+ * Data: 01/09/2025
+ * Versão: 1.1
 ********************************************************************/
 
 //importar o módulo do Express
@@ -20,7 +20,6 @@ app.use(express.json())
 // Ler ou modificar dados da requisição (req)
 // Fazer validações
 // Chamar a próxima função de rota
-
 
 //definir a porta em que o servidor irá escutar
 const porta = 8000

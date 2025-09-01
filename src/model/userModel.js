@@ -1,8 +1,8 @@
 /********************************************************************
  * Objetivo: simular um banco de dados em memória para gerenciar usuários, permitindo listar, buscar por ID e adicionar novos usuários.
  * Autor: Marcelo Vieira
- * Data: 27/08/2025
- * Versão: 1.0
+ * Data: 01/09/2025
+ * Versão: 1.1
 ********************************************************************/
 
 //simulação de um banco de dados em memória
@@ -19,7 +19,7 @@ const findAll = () => {
 
 //função para buscar um usuário por ID
 const findById = (id) => {
-    return users.find(user => user.id === parseInt(id))
+    return users.find(user => user.id === id)
 }
 
 //função que adiciona um novo usuario
