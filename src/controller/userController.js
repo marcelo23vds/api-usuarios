@@ -2,7 +2,7 @@
  * Objetivo: O controlador lida com a lógica da requisição e resposta, utilizando o modelo para acessar os dados.
  * Autor: Marcelo Vieira
  * Data: 27/08/2025
- * Versão: 1.0
+ * Versão: 1.1
 ********************************************************************/
 
 const userModel = require('../model/userModel')
@@ -23,7 +23,7 @@ const createUser = (req, res) => {
 // controlador para buscar um usuário por ID
 const getUserById = (req, res) => {
     // extrai o parametro id
-    const { id } = req.params
+    const id = req.params.id
     const user = userModel.findById(id)
 
     if (!user) {
