@@ -11,7 +11,7 @@ const userModel = require('../model/userModel')
 const createUser = (req, res) => {
 
     //pegando os dados que foram enviados pelo body (corpo) da requisição
-
+    //extraindo tudo que vem no body(nome e email)
     const {name, email} = req.body
     //equivalente a:
     //const name = req.body.name
@@ -19,11 +19,11 @@ const createUser = (req, res) => {
 
     const newUser = userModel.create({name, email})
 
-    if(newUser) {
+    if(!name || !email) {
+        res.status(404).json({mensagem: 'Erro na criação do usuario!'})
+    } else {
         //codigo de status 201 significa que foi criado com sucesso
         res.status(201).json(newUser) 
-    } else {
-        res.status(404).json({mensagem: 'Erro na criação do usuario!'})
     }
     
 }
