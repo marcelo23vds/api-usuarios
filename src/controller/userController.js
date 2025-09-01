@@ -13,21 +13,24 @@ const createUser = (req, res) => {
 
     if (!name || !email) {
         return res.status(400).json({message: 'Nome e email são obrigatorios!'})
+    } else {
+        const newUser = userModel.create({name, email})
+        //codigo de status 201 significa que foi criado com sucesso
+        res.status(201).json(newUser) 
     }
-    const newUser = userModel.create({name, email})
-    res.status(201).json(newUser)
 }
 
 // controlador para buscar um usuário por ID
 const getUserById = (req, res) => {
-    const { id } = req.params // extrai o parametro id
+    // extrai o parametro id
+    const { id } = req.params
     const user = userModel.findById(id)
 
     if (!user) {
         return res.status(404).json({ message: 'Usuário não encontrado!' })
+    } else {
+        res.status(200).json(user)
     }
-
-    res.status(200).json(user)
 }
 
 
