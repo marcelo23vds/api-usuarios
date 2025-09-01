@@ -20,7 +20,7 @@ const createUser = (req, res) => {
     const newUser = userModel.create({name, email})
 
     if(!name || !email) {
-        res.status(404).json({mensagem: 'Erro na criação do usuario!'})
+        res.status(400).json({mensagem: 'Erro na criação do usuario!'})
     } else {
         //codigo de status 201 significa que foi criado com sucesso
         res.status(201).json(newUser) 
